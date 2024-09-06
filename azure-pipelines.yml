@@ -1,0 +1,22 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+resources:
+ repositories:
+   - repository: HISE
+     type: github
+     name: johnmannix/HISE
+     endpoint: johnmannix
+     ref: azure-pipelines
+
+variables:
+- group: Secrets
+
+stages:
+- template: ci/pipeline-template.yml@HISE
+  parameters:
+    projectFolder: 'ab-reference'
+    pluginFilename: 'AB Reference'

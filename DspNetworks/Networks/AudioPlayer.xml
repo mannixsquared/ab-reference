@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="AudioPlayer" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="AudioPlayer" Bypassed="0" Name="AudioPlayer">
+    <Nodes>
+      <Node ID="matrix" FactoryPath="routing.matrix" Bypassed="0" Folded="1"
+            Name="matrix">
+        <Properties>
+          <Property ID="EmbeddedData" Value="68.3o8BJ+RKIy7R22DKonLqfAFY0uRyM37KsnjS04LRLu7RMmhAJFiLw.CL.kuAf3+efffSMuTfyApjFhrjv4v..T8ak3H"/>
+        </Properties>
+        <Parameters/>
+      </Node>
+      <Node ID="file_player" FactoryPath="core.file_player" Bypassed="0"
+            Name="file_player">
+        <ComplexData>
+          <AudioFiles>
+            <AudioFile Index="0" MinValue="0" MaxValue="7324672"/>
+          </AudioFiles>
+        </ComplexData>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="PlaybackMode"
+                     Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Gate" Value="1.0"/>
+          <Parameter MinValue="20.0" MaxValue="2000.0" ID="RootFrequency" Value="440.0"/>
+          <Parameter MinValue="0.0" MaxValue="2.0" StepSize="0.009999999776482582"
+                     ID="FreqRatio" Value="1.0"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
