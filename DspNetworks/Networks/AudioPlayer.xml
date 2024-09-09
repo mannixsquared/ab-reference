@@ -14,7 +14,7 @@
             Name="file_player">
         <ComplexData>
           <AudioFiles>
-            <AudioFile Index="0" MinValue="0" MaxValue="7324672"/>
+            <AudioFile Index="0" MinValue="0" MaxValue="0"/>
           </AudioFiles>
         </ComplexData>
         <Parameters>
