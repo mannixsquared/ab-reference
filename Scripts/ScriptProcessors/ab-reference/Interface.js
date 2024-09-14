@@ -8,6 +8,7 @@ const var FrequencyValue = Content.getComponent("FrequencyValue");
 const var WidthValue = Content.getComponent("WidthValue");
 
 const player = Synth.getEffect("AudioPlayer");
+const gain = Synth.getEffect("Simple Gain1");
 const EQ = Synth.getEffect("EQ");
 var bandwidth = 2.5;
 
@@ -16,8 +17,10 @@ inline function onButton1Control(component, value)
 	if (value) {
 		Synth.playNote(64, 127);
 		player.setBypassed(false);
+		gain.setBypassed(false);
 	} else {
 		player.setBypassed(true);
+		gain.setBypassed(true);
 	}
 }
 
