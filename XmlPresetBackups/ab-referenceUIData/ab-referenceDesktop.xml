@@ -2,13 +2,16 @@
 
 <ContentProperties DeviceType="Desktop">
   <Component type="ScriptPanel" id="Panel1" x="1.0" y="0.0" width="600.0"
-             height="600.0" itemColour="4278190080" itemColour2="4278190080"
-             locked="1"/>
+             height="650.0" itemColour="4278190080" itemColour2="4278190080"
+             locked="1" borderRadius="0.0" borderSize="0.0"/>
+  <Component type="ScriptPanel" id="Separator" x="20.0" y="546.0" width="560.0"
+             height="1.0" borderSize="0.0" borderRadius="0.0" bgColour="4292926663"
+             itemColour="820042951" itemColour2="820042951"/>
   <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="20.0" y="90.0"
              processorId="AudioPlayer" width="560.0" height="200.0" itemColour2="4280339679"
              itemColour="4290640127" bgColour="0" itemColour3="4294967295"
              showLines="1" opaque="0"/>
-  <Component type="ScriptButton" id="Button1" x="100.0" y="528.0" text="A|B TEST"
+  <Component type="ScriptButton" id="Button1" x="100.0" y="578.0" text="A|B TEST"
              itemColour="0" itemColour2="0" bgColour="0" textColour="4292926663"
              width="90.0" height="30.0"/>
   <Component type="ScriptFloatingTile" id="FloatingTile2" x="20.0" y="310.0"
@@ -21,43 +24,61 @@
              width="560.0" height="190.0"/>
   <Component type="ScriptLabel" id="Label1" x="70.0" y="30.0" alignment="left"
              text="A|B REFERENCE" fontName="Avenir Next" fontSize="34.0" width="210.0"
-             height="20.0" textColour="4292926663"/>
-  <Component type="ScriptSlider" id="BandWidth" x="465.0" y="515.0" min="2.0"
+             height="20.0" textColour="4292926663" editable="0"/>
+  <Component type="ScriptSlider" id="BandWidth" x="465.0" y="565.0" min="2.0"
              max="10.0" stepSize="0.1000000014901161" suffix=" Hz" middlePosition="6.0"
              filmstripImage="{PROJECT_FOLDER}subtle_knob.png" numStrips="64.0"
              width="64.0" height="64.0" showTextBox="0" defaultValue="2.5"/>
-  <Component type="ScriptButton" id="Filter" x="190.0" y="528.0" text="ENABLE FILTER"
+  <Component type="ScriptButton" id="Filter" x="190.0" y="578.0" text="ENABLE FILTER"
              bgColour="0" itemColour2="0" itemColour="0" height="30.0" textColour="4292926663"
              width="120.0"/>
-  <Component type="ScriptLabel" id="Label2" x="502.0" y="525.0" text="WIDTH"
+  <Component type="ScriptLabel" id="Label2" x="502.0" y="575.0" text="WIDTH"
              editable="0" itemColour2="0" alignment="right" width="80.0" height="20.0"
              fontName="Avenir Next" fontStyle="Bold" fontSize="16.0" textColour="4280339679"/>
   <Component type="ScriptLabel" id="Company" x="430.0" y="30.0" alignment="right"
              text="&#169; Mannix Squared, 2024" textColour="4292926663" parentComponent="MainPanel"
-             fontName="Avenir Next" fontSize="16.0" width="150.0"/>
+             fontName="Avenir Next" fontSize="16.0" width="150.0" editable="0"/>
   <Component type="ScriptLabel" id="Version" x="450.0" y="10.0" text="V1.0"
              alignment="right" fontStyle="Bold" parentComponent="MainPanel"
-             fontName="Avenir Next" fontSize="16.0" textColour="4280339679"/>
+             fontName="Avenir Next" fontSize="16.0" textColour="4280339679"
+             editable="0"/>
   <Component type="ScriptImage" id="Image1" x="17.0" y="17.0" fileName="{PROJECT_FOLDER}logo.png"/>
-  <Component type="ScriptSlider" id="Frequency" x="320.0" y="515.0" mode="Frequency"
+  <Component type="ScriptSlider" id="Frequency" x="320.0" y="565.0" mode="Frequency"
              min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
              filmstripImage="{PROJECT_FOLDER}subtle_knob.png" numStrips="64.0"
              width="64.0" height="64.0" showTextBox="0" defaultValue="100.0"/>
-  <Component type="ScriptLabel" id="Label3" x="381.0" y="525.0" text="FREQUENCY"
+  <Component type="ScriptLabel" id="Label3" x="381.0" y="575.0" text="FREQUENCY"
              editable="0" itemColour2="0" alignment="right" width="80.0" height="20.0"
              fontName="Avenir Next" fontStyle="Bold" fontSize="16.0" textColour="4280339679"/>
-  <Component type="ScriptLabel" id="WidthValue" x="502.0" y="545.0" text="2.5"
+  <Component type="ScriptLabel" id="WidthValue" x="502.0" y="595.0" text="2.6"
              editable="0" itemColour2="0" alignment="right" width="80.0" height="20.0"
              fontName="Avenir Next" fontStyle="Regular" fontSize="16.0" textColour="4292926663"/>
-  <Component type="ScriptLabel" id="FrequencyValue" x="380.0" y="545.0" text="100 Hz"
+  <Component type="ScriptLabel" id="FrequencyValue" x="380.0" y="595.0" text="124 Hz"
              editable="0" itemColour2="0" alignment="right" width="80.0" height="20.0"
              fontName="Avenir Next" fontStyle="Regular" fontSize="16.0" textColour="4292926663"/>
-  <Component type="ScriptSlider" id="Volume" x="20.0" y="510.0" mode="Decibel"
+  <Component type="ScriptSlider" id="Volume" x="20.0" y="560.0" mode="Decibel"
              min="-24.0" max="0.0" stepSize="1.0" suffix=" Hz" middlePosition="-12.0"
              filmstripImage="{PROJECT_FOLDER}subtle_knob.png" numStrips="64.0"
              width="64.0" height="64.0" showTextBox="0" processorId="Simple Gain1"
              parameterId="Gain"/>
-  <Component type="ScriptLabel" id="Label4" x="10.0" y="570.0" text="VOLUME"
+  <Component type="ScriptLabel" id="Label4" x="10.0" y="620.0" text="VOLUME"
              editable="0" itemColour2="0" width="80.0" height="20.0" fontName="Avenir Next"
              fontStyle="Bold" fontSize="14.0" textColour="4280339679"/>
+  <Component type="ScriptButton" id="SubBass" x="15.0" y="510.0" text="Sub-bass"
+             width="90.0" height="30.0" bgColour="0" itemColour2="0" itemColour="0"
+             radioGroup="1.0"/>
+  <Component type="ScriptButton" id="Bass" x="113.0" y="510.0" width="65.0"
+             height="30.0" bgColour="0" itemColour="0" itemColour2="0" radioGroup="1.0"/>
+  <Component type="ScriptButton" id="LowMids" x="191.0" y="510.0" text="Low Mids"
+             width="90.0" height="30.0" bgColour="0" itemColour="0" itemColour2="0"
+             radioGroup="1.0"/>
+  <Component type="ScriptButton" id="MidRange" x="289.0" y="510.0" text="Mid Range"
+             width="95.0" height="30.0" bgColour="0" itemColour="0" itemColour2="0"
+             radioGroup="1.0"/>
+  <Component type="ScriptButton" id="UpperMids" x="387.0" y="510.0" text="Upper Mids"
+             width="99.0" height="30.0" bgColour="0" itemColour="0" itemColour2="0"
+             radioGroup="1.0"/>
+  <Component type="ScriptButton" id="Presence" x="493.0" y="510.0" width="91.0"
+             height="30.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+             radioGroup="1.0"/>
 </ContentProperties>
